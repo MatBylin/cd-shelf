@@ -1,7 +1,6 @@
 package pack.cd;
 
 import lombok.Data;
-
 import java.io.Serializable;
 
 @Data
@@ -41,8 +40,4 @@ public class CdAlbum implements Comparable<CdAlbum>, Serializable {
         return title.compareTo(o.title);
     }
     //private int id;
-
-    private void smth() {
-
-    }
 }

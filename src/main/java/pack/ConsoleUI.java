@@ -2,6 +2,8 @@ package pack;
 
 import pack.cd.CdAlbum;
 import pack.cd.CdLibrary;
+import pack.cd.exceptions.EmptyCdAlbumException;
+import pack.cd.exceptions.NullAlbumObjectException;
 
 import java.util.List;
 import java.util.Scanner;
@@ -40,69 +42,114 @@ public class ConsoleUI {
                     searchForPattern();
                     break;
                 case 6:
-                    deleteRecord();
+                    printStatistics();
                     break;
                 case 7:
-                    readDb();
+                    deleteRecord();
                     break;
                 case 8:
-                    writeDb();
+                    readDb();
                     break;
                 case 9:
+                    writeDb();
+                    break;
+                case 10:
                     exit();
                     break;
             }
         }
     }
 
+    //OPTION 1 PRINT RECORDS
     private static void printRecord() {
-        lib.printRecords();
+        try {
+            lib.printRecords();
+        } catch (EmptyCdAlbumException ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 
-
+    //OPTION 2 ADD RECORD
     private static void addRecord() {
-        CdAlbum album = createCdAlbumFromUser();
-        lib.addRecord(album);
+        try {
+            CdAlbum album = createCdAlbumFromUser();
+            lib.addRecord(album);
+        } catch (NullAlbumObjectException ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 
     private static void printSortedMenu() {
         int sortOption = UIHelper.getSortOptionFromUser();
-        switch (sortOption) {
-            case 1:
-                lib.printSortedByTitleRecords();
-                break;
-            case 2:
-                lib.printSortedByArtistRecords();
-                break;
-            case 3:
-                lib.printSortedByRecordPrice();
-                break;
-            case 4:
-                lib.printSortedByIdAsc();
-                break;
-            case 5:
-                lib.printSortedByIdDesc();
-                break;
-            default:
-                System.out.println("Option not fount");
+        try {
+            switch (sortOption) {
+                case 1:
+                    lib.printSortedByTitleRecords();
+                    break;
+                case 2:
+                    lib.printSortedByArtistRecords();
+                    break;
+                case 3:
+                    lib.printSortedByRecordPrice();
+                    break;
+                case 4:
+                    lib.printSortedByIdAsc();
+                    break;
+                case 5:
+                    lib.printSortedByIdDesc();
+                    break;
+                default:
+                    System.out.println("Option not found!!!");
+            }
+        } catch (EmptyCdAlbumException ex) {
+            System.out.println(ex.getMessage());
+        }
+
+    }
+
+    private static void editRecord() {
+        try {
+            int id = getIdFromUser();
+            if (lib.isAlbumInList(id)) {
+                CdAlbum editAlbum = createCdAlbumFromUser();
+                lib.editRecord(id, editAlbum);
+            } else {
+                System.out.println("There is no album with id " + id);
+            }
+        } catch (EmptyCdAlbumException ex) {
+            System.out.println(ex.getMessage());
+        } catch (NullAlbumObjectException ex) {
+            System.out.println(ex.getMessage());
         }
     }
 
-
-    private static void editRecord() {
-        int id = getIdFromUser();
-        CdAlbum editAlbum = createCdAlbumFromUser();
-        lib.editRecord(id, editAlbum);
+    private static void searchForPattern() {
+        try{
+            String search = UIHelper.getSearchStringFromUser();
+            lib.searchFor(search);
+        }
+        catch(EmptyCdAlbumException ex){
+            System.out.println(ex.getMessage());
+        }
     }
 
-    private static void searchForPattern() {
-        String search = UIHelper.getSearchStringFromUser();
-        lib.searchFor(search);
+    private static void printStatistics() {
+        try{
+            lib.printStatistics();
+        }
+        catch(EmptyCdAlbumException ex){
+            System.out.println(ex.getMessage());
+        }
     }
 
     private static void deleteRecord() {
-        int id = getIdFromUser();
-        lib.deleteRecord(id);
+        try{
+            int id = getIdFromUser();
+            lib.deleteRecord(id);
+        }
+        catch(EmptyCdAlbumException ex){
+            System.out.println(ex.getMessage());
+        }
     }
 
     private static void readDb() {

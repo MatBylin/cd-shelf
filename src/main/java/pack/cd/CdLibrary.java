@@ -1,5 +1,7 @@
 package pack.cd;
 
+import pack.cd.exceptions.EmptyCdAlbumException;
+import pack.cd.exceptions.NullAlbumObjectException;
 import pack.cd.interfaces.DBable;
 import pack.cd.interfaces.Library;
 import pack.cd.interfaces.Sortable;
@@ -9,9 +11,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
-//singleton eager implemented
+//SINGLETON IMPLEMENTED
 public final class CdLibrary implements Library, Sortable, DBable, Serializable {
 
     private static CdLibrary INSTANCE = new CdLibrary();
@@ -27,7 +28,7 @@ public final class CdLibrary implements Library, Sortable, DBable, Serializable 
 
     private List<CdAlbum> cdAlbumsList = new ArrayList<>();
 
-
+// POPULATE IN CASE OF EMPTY DB / OR DB DEGUG
 //    private void populateAlbumsList() {
 //        addRecord(new CdAlbum("Jerry Cantrell", "Bogy Depot", "rock album", 36.99));
 //        addRecord(new CdAlbum("Alice in Chains", "Facelift", "grunge album", 43.19));
@@ -36,26 +37,61 @@ public final class CdLibrary implements Library, Sortable, DBable, Serializable 
 //        addRecord(new CdAlbum("Death", "Scream Bloody Gore", "metal album", 29.99));
 //    }
 
+    //According to dry principle
+    private void checkForEmptyCdAlbumException() {
+        //cdAlbumList nie będzie nigdy null, ale w razie czego ;)
+        if (cdAlbumsList.size() == 0 || cdAlbumsList == null) {
+            throw new EmptyCdAlbumException("Album list is null or empty!");
+        }
+    }
+
+    @Override
+    public void printRecords() {
+        checkForEmptyCdAlbumException();
+        for (CdAlbum album : cdAlbumsList) {
+            System.out.println(album);
+        }
+    }
+
+    private void printRecords(List<CdAlbum> cdAlbumsSortList) {
+        checkForEmptyCdAlbumException();
+        for (CdAlbum album : cdAlbumsSortList) {
+            System.out.println(album);
+        }
+    }
+
     @Override
     public void addRecord(CdAlbum album) {
+        if (album == null) {
+            throw new NullAlbumObjectException("Album object is null!");
+        }
         cdAlbumsList.add(album);
     }
 
     @Override
     public void editRecord(int id, CdAlbum newAlbum) {
+        checkForEmptyCdAlbumException();
+        if (newAlbum == null) {
+            throw new NullAlbumObjectException("Album object is null!");
+        }
         int index = getIndexById(id);
         cdAlbumsList.set(index, newAlbum);
+        System.out.println("Album correctly edited!");
     }
 
     public void searchFor(String search) {
-       List<CdAlbum> albums = cdAlbumsList.stream()
+        List<CdAlbum> albums = cdAlbumsList.stream()
                 .filter(e -> e.getArtist().toLowerCase().contains(search.toLowerCase()) ||
                         e.getTitle().toLowerCase().contains(search.toLowerCase())).collect(Collectors.toList());
-       printRecords(albums);
+        if (albums.size() == 0) {
+            System.out.printf("There is no result for %s pattern!", search);
+        }
+        printRecords(albums);
     }
 
     @Override
     public void deleteRecord(int id) {
+        checkForEmptyCdAlbumException();
         boolean isDeleted = cdAlbumsList.removeIf(album -> album.getCdId() == id);
         if (isDeleted) {
             System.out.printf("Album with id : %d removed succesfully! \n", id);
@@ -65,16 +101,15 @@ public final class CdLibrary implements Library, Sortable, DBable, Serializable 
     }
 
     @Override
-    public void printRecords() {
-        for (CdAlbum album : cdAlbumsList) {
-            System.out.println(album);
-        }
-    }
+    public void printStatistics() {
+        checkForEmptyCdAlbumException();
+        DoubleSummaryStatistics priceStat =
+                cdAlbumsList.stream().mapToDouble(CdAlbum::getPriceBought).summaryStatistics();
+        System.out.println("\nNumber of CD's on the shelf : " + priceStat.getCount());
+        System.out.println("The cheapest CD: " + priceStat.getMin());
+        System.out.println("The most expensive CD: " + priceStat.getMax());
+        System.out.println("Avg bought price CD: " + priceStat.getAverage());
 
-    private void printRecords(List<CdAlbum> cdAlbumsSortList) {
-        for (CdAlbum album : cdAlbumsSortList) {
-            System.out.println(album);
-        }
     }
 
     @Override
@@ -149,16 +184,28 @@ public final class CdLibrary implements Library, Sortable, DBable, Serializable 
     }
 
     public int getIndexById(int id) {
+        if (cdAlbumsList.size() == 0 || cdAlbumsList == null) {
+            throw new EmptyCdAlbumException("Album list is null or empty!");
+        }
         int indexOfAlbum = -1;
-        if (cdAlbumsList != null) {
-            for (CdAlbum album : cdAlbumsList) {
-                if (album.getCdId() == id) {
-                    indexOfAlbum = cdAlbumsList.indexOf(album);
-                    System.out.printf("Album with id : %d found! \n", id);
-                }
+        for (CdAlbum album : cdAlbumsList) {
+            if (album.getCdId() == id) {
+                indexOfAlbum = cdAlbumsList.indexOf(album);
             }
         }
         return indexOfAlbum;
+    }
+
+    public boolean isAlbumInList(int id) {
+        if (cdAlbumsList.size() == 0 || cdAlbumsList == null) {
+            throw new EmptyCdAlbumException("Album list is null or empty!");
+        }
+        for (CdAlbum album : cdAlbumsList) {
+            if (album.getCdId() == id) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private Optional<Integer> getMaxIdFromDbList() {

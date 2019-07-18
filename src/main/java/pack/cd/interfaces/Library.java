@@ -1,6 +1,7 @@
 package pack.cd.interfaces;
 
 import pack.cd.CdAlbum;
+import pack.cd.exceptions.EmptyCdAlbumException;
 
 public interface Library {
 
@@ -11,5 +12,7 @@ public interface Library {
     void deleteRecord(int id);
 
     void printRecords();
+
+    void printStatistics();
 
 }

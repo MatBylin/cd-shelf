@@ -25,10 +25,10 @@ class UIHelper {
             System.out.println("Provide price you bought the album : ");
             sc.next(); // this is important!
         }
-        double pricePerDay = sc.nextDouble();
+        double priceBought = sc.nextDouble();
         sc.nextLine();
 
-        return new CdAlbum(artist, title, description, pricePerDay);
+        return new CdAlbum(artist, title, description, priceBought);
     }
 
     static int getIdFromUser() {

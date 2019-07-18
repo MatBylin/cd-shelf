@@ -8,10 +8,11 @@ public class MenuHelper {
             "[3] Sort albums by ... \n" +
             "[4] Edit album  \n" +
             "[5] Search for pattern  \n" +
-            "[6] Delete album from library \n"+
-            "[7] Read from database \n"+
-            "[8] Write to database \n"+
-            "[9] Exit \n"+
+            "[6] Print statistics  \n" +
+            "[7] Delete album from library \n"+
+            "[8] Read from database \n"+
+            "[9] Write to database \n"+
+            "[10] Exit \n"+
             "************************************* \n";
 
     static final String SORT_MENU = "\n"+
