@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="08652495-b96e-4db1-a9f9-314130b5e93a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/pack/cd/CdLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pack/cd/CdLibrary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pack/cd/CdLibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pack/cd/CdLibraryTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,14 +35,14 @@
     </window>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7267726">
+    <splitter split-orientation="horizontal" split-proportion="0.59902203">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/pack/ConsoleUI.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-342">
-                  <caret line="120" column="10" selection-start-line="120" selection-start-column="10" selection-end-line="120" selection-end-column="10" />
+                <state relative-caret-position="114">
+                  <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#4779#4780#0" expanded="true" />
@@ -56,8 +55,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/pack/cd/CdLibrary.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
-                  <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+                <state relative-caret-position="324">
+                  <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1540#1541#0" expanded="true" />
@@ -110,10 +109,9 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/pack/cd/CdLibraryTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="720">
-                  <caret line="188" selection-start-line="188" selection-end-line="188" />
+                <state relative-caret-position="144">
+                  <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
                   <folding>
-                    <element signature="imports" expanded="true" />
                     <element signature="e#493#494#0" expanded="true" />
                     <element signature="e#534#535#0" expanded="true" />
                     <element signature="e#624#625#0" expanded="true" />
@@ -202,7 +200,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -323,7 +321,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CdLibraryTest">
+  <component name="RunManager" selected="Application.ConsoleUI">
     <configuration name="ConsoleUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pack.ConsoleUI" />
       <module name="cdstore" />
@@ -402,8 +400,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CdLibraryTest" />
         <item itemvalue="Application.ConsoleUI" />
+        <item itemvalue="JUnit.CdLibraryTest" />
         <item itemvalue="JUnit.CdLibraryTest.sdfsdfsdf" />
         <item itemvalue="JUnit.CdLibraryTest.afterInitializationCdAlbumListShouldBeEmpty" />
         <item itemvalue="JUnit.CdLibraryTest.afterAddingTwoRecordsAndRemoveOneCdAlbumListSouldHaveSizeEqualsOne" />
@@ -424,15 +422,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CdLibraryTest - 2019.07.18 at 15h 55m 48s.xml">
-      <configuration name="CdLibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CdLibraryTest - 2019.07.18 at 15h 56m 02s.xml">
-      <configuration name="CdLibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CdLibraryTest - 2019.07.18 at 15h 56m 07s.xml">
-      <configuration name="CdLibraryTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CdLibraryTest - 2019.07.18 at 15h 57m 38s.xml">
       <configuration name="CdLibraryTest" configurationId="JUnit" />
     </history-entry>
@@ -454,6 +443,15 @@
     <history-entry file="CdLibraryTest - 2019.07.18 at 16h 12m 17s.xml">
       <configuration name="CdLibraryTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CdLibraryTest - 2019.07.18 at 16h 17m 31s.xml">
+      <configuration name="CdLibraryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CdLibraryTest - 2019.07.18 at 16h 17m 39s.xml">
+      <configuration name="CdLibraryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CdLibraryTest - 2019.07.18 at 16h 18m 02s.xml">
+      <configuration name="CdLibraryTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -468,7 +466,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32947975" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.056277055" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40800866" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -600,10 +598,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pack/cd/CdLibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="188" selection-start-line="188" selection-end-line="188" />
+        <state relative-caret-position="144">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#493#494#0" expanded="true" />
             <element signature="e#534#535#0" expanded="true" />
             <element signature="e#624#625#0" expanded="true" />
@@ -616,8 +613,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pack/ConsoleUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="120" column="10" selection-start-line="120" selection-start-column="10" selection-end-line="120" selection-end-column="10" />
+        <state relative-caret-position="114">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4779#4780#0" expanded="true" />
@@ -628,8 +625,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pack/cd/CdLibrary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        <state relative-caret-position="324">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1540#1541#0" expanded="true" />
