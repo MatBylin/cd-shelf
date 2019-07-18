@@ -1,29 +1,25 @@
 package pack.cd;
 
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import pack.cd.exceptions.EmptyCdAlbumException;
 import pack.cd.exceptions.NullAlbumObjectException;
-
-import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CdLibraryTest {
 
-    CdLibrary lib = null;
+    private CdLibrary lib = null;
 
     @BeforeEach
-    public void setUp() {
+    void setUp() {
         lib = new CdLibrary(true);
     }
 
     @AfterEach
-    public void tearDown()  {
+    void tearDown()  {
         lib = null;
     }
 
@@ -84,7 +80,6 @@ class CdLibraryTest {
     @Test
     void addOneRecordThenShouldBeEditable() {
         lib.addRecord(new CdAlbum("a", "b", "c", 1.10));
-        Integer id = lib.getCdAlbumsList().stream().map(e -> e.getCdId()).findAny().get();
         lib.editRecord(lib.getCdAlbumsList().get(0).getCdId(), new CdAlbum("x", "y", "z", 1.10));
 
         assertEquals(1, lib.getCdAlbumsList().size());
