@@ -1,4 +1,4 @@
 # cd-shelf
-Private CD collection manage system. Made for Solwit Java SDA course 07.2019. 
+Private CD's collection manage system.
 
-Author: Mateusz Byliński | bylinsk@gmail.com
+Author: Mateusz B | matbylin@gmail.com
