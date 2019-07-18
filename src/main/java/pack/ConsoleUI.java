@@ -14,7 +14,7 @@ import static pack.UIHelper.getIdFromUser;
 public class ConsoleUI {
 
     private static Scanner sc = new Scanner(System.in);
-    private static CdLibrary lib = CdLibrary.getInstance();
+    private static CdLibrary lib = new CdLibrary();
 
     public static void main(String[] args) {
 
@@ -84,19 +84,19 @@ public class ConsoleUI {
         try {
             switch (sortOption) {
                 case 1:
-                    lib.printSortedByTitleRecords();
+                    lib.printRecords(lib.getSortedByTitleRecords());
                     break;
                 case 2:
-                    lib.printSortedByArtistRecords();
+                    lib.printRecords(lib.getSortedByArtistRecords());
                     break;
                 case 3:
-                    lib.printSortedByRecordPrice();
+                    lib.printRecords(lib.getSortedByRecordPrice());
                     break;
                 case 4:
-                    lib.printSortedByIdAsc();
+                    lib.printRecords(lib.getSortedByIdAsc());
                     break;
                 case 5:
-                    lib.printSortedByIdDesc();
+                    lib.printRecords(lib.getSortedByIdDesc());
                     break;
                 default:
                     System.out.println("Option not found!!!");
@@ -126,7 +126,13 @@ public class ConsoleUI {
     private static void searchForPattern() {
         try{
             String search = UIHelper.getSearchStringFromUser();
-            lib.searchFor(search);
+            List<CdAlbum> searchAlbums = lib.searchFor(search);
+            if (searchAlbums.size() == 0) {
+                System.out.printf("There is no result for '%s' pattern\n", search);
+            }
+            else{
+                lib.printRecords(searchAlbums);
+            }
         }
         catch(EmptyCdAlbumException ex){
             System.out.println(ex.getMessage());
@@ -135,7 +141,8 @@ public class ConsoleUI {
 
     private static void printStatistics() {
         try{
-            lib.printStatistics();
+            String stats = lib.getStatistics();
+            System.out.println(stats);
         }
         catch(EmptyCdAlbumException ex){
             System.out.println(ex.getMessage());
@@ -157,7 +164,12 @@ public class ConsoleUI {
     }
 
     private static void writeDb() {
-        lib.writeDb();
+        try{
+            lib.writeDb();
+        }
+        catch(EmptyCdAlbumException ex){
+            System.out.println(ex.getMessage());
+        }
     }
 
     private static void exit() {

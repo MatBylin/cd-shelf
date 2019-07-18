@@ -13,6 +13,6 @@ public interface Library {
 
     void printRecords();
 
-    void printStatistics();
+    String getStatistics();
 
 }

@@ -1,14 +1,18 @@
 package pack.cd.interfaces;
 
+import pack.cd.CdAlbum;
+
+import java.util.List;
+
 public interface Sortable {
 
-    void printSortedByTitleRecords();
+    List<CdAlbum> getSortedByTitleRecords();
 
-    void printSortedByArtistRecords();
+    List<CdAlbum> getSortedByArtistRecords();
 
-    void printSortedByRecordPrice();
+    List<CdAlbum> getSortedByRecordPrice();
 
-    void printSortedByIdAsc();
+    List<CdAlbum> getSortedByIdAsc();
 
-    void printSortedByIdDesc();
+    List<CdAlbum> getSortedByIdDesc();
 }
