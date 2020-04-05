@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08652495-b96e-4db1-a9f9-314130b5e93a" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
+    <list default="true" id="08652495-b96e-4db1-a9f9-314130b5e93a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/albumlistForTest.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pack/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pack/ConsoleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pack/MenuHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pack/MenuHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pack/UIHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pack/UIHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pack/cd/CdAlbum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pack/cd/CdAlbum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pack/cd/CdLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pack/cd/CdLibrary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pack/cd/CdLibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pack/cd/CdLibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/cdstore.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pack/ConsoleUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pack/ConsoleUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pack/MenuHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pack/MenuHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pack/UIHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pack/UIHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pack/cd/CdAlbum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pack/cd/CdAlbum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pack/cd/CdLibrary.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pack/cd/CdLibrary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pack/cd/CdLibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pack/cd/CdLibraryTest.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,99 +30,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.59902203">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/pack/ConsoleUI.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="114">
-                  <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#4779#4780#0" expanded="true" />
-                    <element signature="e#5036#5037#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/pack/cd/CdLibrary.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="324">
-                  <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#1540#1541#0" expanded="true" />
-                    <element signature="e#1575#1576#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/pack/cd/interfaces/Sortable.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/pack/cd/CdAlbum.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/pack/cd/interfaces/Library.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/pack/cd/CdLibraryTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-                  <folding>
-                    <element signature="e#493#494#0" expanded="true" />
-                    <element signature="e#534#535#0" expanded="true" />
-                    <element signature="e#624#625#0" expanded="true" />
-                    <element signature="e#650#651#0" expanded="true" />
-                    <element signature="e#682#683#0" expanded="true" />
-                    <element signature="e#743#744#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -123,34 +48,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/pack/Library.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pack/CdAlbum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/CdLibrary.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pack/Menu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pack/Program.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pack/CdLibrary.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/pack/cd/Sortable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pack/cd/DBable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pack/cd/Library.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pack/cd/Statistics.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pack/MenuHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pack/cd/interfaces/Reservation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pack/cd/CdAlbum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pack/cd/exceptions/EmptyCdAlbumException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pack/UIHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pack/cd/exceptions/NullAlbumObjectException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pack/cd/interfaces/Library.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pack/cd/interfaces/Sortable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pack/ConsoleUI.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pack/cd/CdLibraryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pack/cd/CdLibrary.java" />
-      </list>
-    </option>
-  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -158,115 +55,8 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="cdshelf" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="cdshelf" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="cdshelf" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
+  <component name="ProjectId" id="1a78PsoDVnJqV08oJSO3wYBULt0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="cd-shlelf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cd-shlelf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cd-shlelf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cd-shlelf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cd-shlelf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cd-shlelf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cd-shlelf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cd-shlelf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cd-shlelf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cd-shlelf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cd-shlelf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cd-shlelf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pack" type="462c0819:PsiDirectoryNode" />
-              <item name="cd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cd-shlelf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cd-shlelf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pack" type="462c0819:PsiDirectoryNode" />
-              <item name="cd" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cd-shlelf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cd-shlelf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pack" type="462c0819:PsiDirectoryNode" />
-              <item name="cd" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cd-shlelf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cd-shlelf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
@@ -303,13 +93,28 @@
   <component name="RunManager" selected="Application.ConsoleUI">
     <configuration name="ConsoleUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pack.ConsoleUI" />
-      <module name="cdstore" />
+      <module name="cdshelf" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CdLibraryTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cdshelf" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pack.cd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pack.cd" />
+      <option name="MAIN_CLASS_NAME" value="pack.cd.CdLibraryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -325,22 +130,6 @@
       <option name="PACKAGE_NAME" value="pack.cd" />
       <option name="MAIN_CLASS_NAME" value="pack.cd.CdLibraryTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CdLibraryTest.afterAddingTwoRecordsAndRemoveOneCdAlbumListSouldHaveSizeEqualsOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cdstore" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pack.cd.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pack.cd" />
-      <option name="MAIN_CLASS_NAME" value="pack.cd.CdLibraryTest" />
-      <option name="METHOD_NAME" value="afterAddingTwoRecordsAndRemoveOneCdAlbumListSouldHaveSizeEqualsOne" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -380,10 +169,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ConsoleUI" />
+        <item itemvalue="JUnit.CdLibraryTest (1)" />
         <item itemvalue="JUnit.CdLibraryTest" />
         <item itemvalue="JUnit.CdLibraryTest.sdfsdfsdf" />
         <item itemvalue="JUnit.CdLibraryTest.afterInitializationCdAlbumListShouldBeEmpty" />
-        <item itemvalue="JUnit.CdLibraryTest.afterAddingTwoRecordsAndRemoveOneCdAlbumListSouldHaveSizeEqualsOne" />
       </list>
     </recent_temporary>
   </component>
@@ -400,219 +189,16 @@
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="CdLibraryTest - 2019.07.18 at 15h 57m 38s.xml">
-      <configuration name="CdLibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CdLibraryTest - 2019.07.18 at 15h 58m 57s.xml">
-      <configuration name="CdLibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CdLibraryTest - 2019.07.18 at 15h 59m 15s.xml">
-      <configuration name="CdLibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CdLibraryTest - 2019.07.18 at 16h 04m 35s.xml">
-      <configuration name="CdLibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CdLibraryTest - 2019.07.18 at 16h 06m 14s.xml">
-      <configuration name="CdLibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CdLibraryTest - 2019.07.18 at 16h 11m 29s.xml">
-      <configuration name="CdLibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CdLibraryTest - 2019.07.18 at 16h 12m 17s.xml">
-      <configuration name="CdLibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CdLibraryTest - 2019.07.18 at 16h 17m 31s.xml">
-      <configuration name="CdLibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CdLibraryTest - 2019.07.18 at 16h 17m 39s.xml">
-      <configuration name="CdLibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CdLibraryTest - 2019.07.18 at 16h 18m 02s.xml">
-      <configuration name="CdLibraryTest" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12793177" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32947975" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.032467533" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32900432" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.20095949" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cd-shelf.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pack/cd/interfaces/DBable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pack/cd/Statistics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pack/cd/interfaces/Reservation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pack/cd/exceptions/NullAlbumObjectException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#193#194#0" expanded="true" />
-            <element signature="e#223#224#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pack/cd/exceptions/EmptyCdAlbumException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="11" />
-          <folding>
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#208#209#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.0/junit-platform-commons-1.5.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="112" column="133" selection-start-line="112" selection-start-column="133" selection-end-line="112" selection-end-column="133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pack/UIHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pack/cd/interfaces/Library.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pack/cd/CdAlbum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pack/cd/interfaces/Sortable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pack/cd/CdLibraryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pack/ConsoleUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4779#4780#0" expanded="true" />
-            <element signature="e#5036#5037#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pack/cd/CdLibrary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
-            <element signature="e#1575#1576#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pack/MenuHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="masterDetails">
     <states>

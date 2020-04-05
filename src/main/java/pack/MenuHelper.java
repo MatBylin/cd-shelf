@@ -1,6 +1,6 @@
 package pack;
 
-public class MenuHelper {
+class MenuHelper {
     static final String MENU = "\n\n"+
             "Select option from below :  \n" +
             "[1] Print Albums \n" +

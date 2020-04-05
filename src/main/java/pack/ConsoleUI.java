@@ -60,7 +60,6 @@ public class ConsoleUI {
         }
     }
 
-    //OPTION 1 PRINT RECORDS
     private static void printRecord() {
         try {
             lib.printRecords();
@@ -69,7 +68,6 @@ public class ConsoleUI {
         }
     }
 
-    //OPTION 2 ADD RECORD
     private static void addRecord() {
         try {
             CdAlbum album = createCdAlbumFromUser();
@@ -116,45 +114,39 @@ public class ConsoleUI {
             } else {
                 System.out.println("There is no album with id " + id);
             }
-        } catch (EmptyCdAlbumException ex) {
-            System.out.println(ex.getMessage());
-        } catch (NullAlbumObjectException ex) {
+        } catch (EmptyCdAlbumException | NullAlbumObjectException ex) {
             System.out.println(ex.getMessage());
         }
     }
 
     private static void searchForPattern() {
-        try{
+        try {
             String search = UIHelper.getSearchStringFromUser();
             List<CdAlbum> searchAlbums = lib.searchFor(search);
             if (searchAlbums.size() == 0) {
                 System.out.printf("There is no result for '%s' pattern\n", search);
-            }
-            else{
+            } else {
                 lib.printRecords(searchAlbums);
             }
-        }
-        catch(EmptyCdAlbumException ex){
+        } catch (EmptyCdAlbumException ex) {
             System.out.println(ex.getMessage());
         }
     }
 
     private static void printStatistics() {
-        try{
+        try {
             String stats = lib.getStatistics();
             System.out.println(stats);
-        }
-        catch(EmptyCdAlbumException ex){
+        } catch (EmptyCdAlbumException ex) {
             System.out.println(ex.getMessage());
         }
     }
 
     private static void deleteRecord() {
-        try{
+        try {
             int id = getIdFromUser();
             lib.deleteRecord(id);
-        }
-        catch(EmptyCdAlbumException ex){
+        } catch (EmptyCdAlbumException ex) {
             System.out.println(ex.getMessage());
         }
     }
@@ -164,10 +156,9 @@ public class ConsoleUI {
     }
 
     private static void writeDb() {
-        try{
+        try {
             lib.writeDb();
-        }
-        catch(EmptyCdAlbumException ex){
+        } catch (EmptyCdAlbumException ex) {
             System.out.println(ex.getMessage());
         }
     }

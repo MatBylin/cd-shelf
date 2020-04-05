@@ -1,6 +1,7 @@
 package pack.cd;
 
 import lombok.Data;
+
 import java.io.Serializable;
 
 @Data
@@ -11,6 +12,7 @@ public class CdAlbum implements Comparable<CdAlbum>, Serializable {
     private double priceBought;
     private static int id = 1;
     private int cdId;
+    private static final long serialVersionUID = 8693256477478073922L;
 
     public CdAlbum(String artist, String title, String description, double priceBought) {
         this.artist = artist;
@@ -20,7 +22,7 @@ public class CdAlbum implements Comparable<CdAlbum>, Serializable {
         cdId = id++;
     }
 
-    public static void setId(int idFromDB) {
+    static void setId(int idFromDB) {
         id = idFromDB;
     }
 
@@ -39,5 +41,4 @@ public class CdAlbum implements Comparable<CdAlbum>, Serializable {
     public int compareTo(CdAlbum o) {
         return title.compareTo(o.title);
     }
-    //private int id;
 }

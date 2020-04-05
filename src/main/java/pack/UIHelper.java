@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 class UIHelper {
 
-    static Scanner sc = new Scanner(System.in);
+    private static Scanner sc = new Scanner(System.in);
 
     static CdAlbum createCdAlbumFromUser() {
         System.out.print("Provide album title : ");
@@ -23,7 +23,7 @@ class UIHelper {
         while (!sc.hasNextDouble()) {
             System.out.println("That's not a valid floating point number!");
             System.out.println("Provide price you bought the album : ");
-            sc.next(); // this is important!
+            sc.next();
         }
         double priceBought = sc.nextDouble();
         sc.nextLine();
@@ -38,7 +38,7 @@ class UIHelper {
         while (!sc.hasNextInt()) {
             System.out.println("That's not a number!");
             System.out.println("Provide album id : ");
-            sc.next(); // this is important!
+            sc.next();
         }
         id = sc.nextInt();
         sc.nextLine();
@@ -51,14 +51,14 @@ class UIHelper {
     }
 
     static int getSortOptionFromUser() {
-        int sortOption =1;
+        int sortOption;
         System.out.println(MenuHelper.SORT_MENU);
 
         System.out.print("Enter sort option : ");
         while (!sc.hasNextInt()) {
             System.out.println("That's not a number!");
             System.out.println("Provide album id : ");
-            sc.next(); // this is important!
+            sc.next();
         }
         sortOption = sc.nextInt();
         sc.nextLine();

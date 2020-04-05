@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cd-store" />
         <module name="cdstore" />
+        <module name="cdshelf" />
       </profile>
     </annotationProcessing>
   </component>
